@@ -2,6 +2,8 @@
 
 This tool scans a folder for routes in JavaScript or TypeScript files, specifically designed for Node.js projects utilizing Express.js frameworks. It generates detailed outputs in a `data/<folder_name>` directory. Ideal for application security (AppSec) teams, researchers, and white-box cybersecurity specialists analyzing Node.js code.
 
+Note: This project is a work in progress, and features are being actively developed and improved.
+
 ## Who Can Use It
 - **Application Security Teams**: To identify potential security risks in route handling.
 - **Cybersecurity Researchers**: For white-box analysis of Node.js codebases.
@@ -18,9 +20,8 @@ This tool scans a folder for routes in JavaScript or TypeScript files, specifica
    - Path parameters (e.g., `:id`)
 5. **Headers Detection**: Extracts headers from API calls (e.g., `req.headers`).
 6. **Environment Variables**: Lists `process.env` variables used in routes.
-7. **Hardcoded Secrets**: Detects potential hardcoded secrets, such as API keys, tokens, and passwords.
-8. **Comments Parsing**: Extracts all comments, including TODOs and logs, to a CSV file.
-9. **Other URLs**: Includes non-standard URLs detected in the code.
+7. **Comments Parsing**: Extracts all comments, including TODOs and logs, to a CSV file.
+8. **Other URLs**: Includes non-standard URLs detected in the code.
 
 ## Usage
 
@@ -50,7 +51,6 @@ Generated outputs are saved in the `data/<folder_name>` directory:
 - **`headers.json`**: Extracted headers used in API calls.
 - **`headers.txt`**: Unique headers in text format.
 - **`environment_variables.json`**: Detected `process.env` variables.
-- **`hardcoded_secrets.json`**: Hardcoded secrets detected in code and comments.
 - **`comments.csv`**: All comments found in the code.
 - **`query_string.txt`**: Query string of all parameters combined.
 - **`other_urls.json`**: Non-standard URLs not mapped to routers.
@@ -67,7 +67,6 @@ data/
     ├── headers.json
     ├── headers.txt
     ├── environment_variables.json
-    ├── hardcoded_secrets.json
     ├── comments.csv
     ├── query_string.txt
     ├── other_urls.json

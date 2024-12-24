@@ -1,4 +1,4 @@
-# Route Scanner Tool
+# Code Scanner Tool
 
 This tool scans a folder for routes in JavaScript or TypeScript files, specifically designed for Node.js projects utilizing Express.js frameworks. It generates detailed outputs in a `data/<folder_name>` directory. Ideal for application security (AppSec) teams, researchers, and white-box cybersecurity specialists analyzing Node.js code.
 
